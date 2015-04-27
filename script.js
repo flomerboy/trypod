@@ -29,4 +29,10 @@ $(document).ready(function(){
 		readHeight();
 		draw();
 	});
+
+	$('.single-item').slick({
+		autoplay: true,
+		lazyLoad: 'ondemand',
+		autoplaySpeed: 2000
+	});
 });

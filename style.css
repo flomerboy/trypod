@@ -5,6 +5,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 @font-face { font-family: ApercuLight; src: url('fonts/Apercu-Light.otf'); }
 @font-face { font-family: CentSchlbkItalic; src: url('fonts/CenturySchoolbookStd-Italic.otf'); }
 
+html,body{
+	overflow-x:hidden;
+}
 
 div.header{
 	background-color:#0084b7;
@@ -15,8 +18,56 @@ div.header{
 	background-size: cover;
 }
 
+div#nexusScreens{
+	position:inherit;
+	display: block;
+	margin:auto;
+	width: 100%;
+	margin-top: 10vh;
+	z-index: 2;
+}
+div#slideShow{
+	padding-top:10vh;
+}
+
+em{
+	font-family: ApercuMedium;
+}
+
+h1{
+	clear: right;
+	margin-left: 55%;
+	font-family: CentSchlbkItalic;	
+	font-size: 2em;
+	color: #FFF;
+	line-height: 1.5em;
+	position: relative;
+  	top: 40%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-width: 35%;
+}
+
 img#trypodWhiteLogo{
 	height:35px;
+}
+
+img#nexus{
+	display: block;
+	margin: auto;
+	margin-top: -72vh;
+	margin-bottom: 10vh;
+	height:75vh;
+	background-color: rgba(0,0,0,0);
+	z-index: 1;
+	position:relative;
+}
+
+img.screen{
+	height:62vh;
+	display: block;
+	margin: auto;
 }
 
 li{
@@ -38,24 +89,20 @@ li:hover{
 li:active{
 	border-top: 4px solid rgba(255,255,255,.8);
 }
+
+p.screenDescription{
+	position:inherit;
+	float:left;
+	margin-left: 70vw;
+	display: block;	
+	margin-top: -50vh;
+	font-family: ApercuLight;
+	max-width: 20vw;		
+}
+
 ul{
 	padding-right: 5vw;
 	padding-left: 5vw;
-}
-
-h1{
-	clear: right;
-	margin-left: 55%;
-	font-family: CentSchlbkItalic;	
-	font-size: 2em;
-	color: #FFF;
-	line-height: 1.5em;
-	position: relative;
-  	top: 40%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    max-width: 35%;
 }
 
 
