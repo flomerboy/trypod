@@ -10,9 +10,9 @@ $(document).ready(function(){
 	readHeight = function(){      					// Height of window (visible part).
 		scrollHeight = $(window).scrollTop();			//this value starts high and ends low
 		console.log("scrollHeight = " + scrollHeight);
-		R = map_range(scrollHeight, 0, headerHeight, 0, 0);
+		R = map_range(scrollHeight, 0, headerHeight, 0, 100);
 		G = map_range(scrollHeight, 0, headerHeight, 133, 165);
-		B = map_range(scrollHeight, 0, headerHeight, 184, 229);
+		B = map_range(scrollHeight, 0, headerHeight, 200, 250);
 		console.log("RGB = ("  + R + ", " + G + ", " + B + ")");	
 	};
 
