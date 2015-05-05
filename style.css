@@ -9,11 +9,24 @@ html,body{
 	overflow-x:hidden;
 }
 
+a.button{
+	color:#2196F3;
+	font-family: ApercuLight;
+	text-decoration: none;
+	margin-left: 23vw;
+}
+
+a.button:hover{
+	color:#2196F3;
+	font-family: ApercuLight;
+	text-decoration: underline;
+	margin-left: 23vw;
+	cursor: pointer;
+}
+
 div.header{
-	background-color:#0084b7;
-	position:relative;
 	height: 95vh;
-	background-image: url("img/header_placeholder.jpg");
+	background-image: url("img/gloryshot3.png");
 	background-blend-mode:overlay;
 	background-size: cover;
 }
@@ -26,7 +39,6 @@ div#nexusScreens{
 	z-index: 2;
 }
 div#slideShow{
-	padding-top:20vh;
 }
 
 div.footer{
@@ -35,6 +47,7 @@ div.footer{
 	display:block;
 	float:left;
 	width:100%;
+	margin-top: 20vh;
 }
 
 em{
@@ -43,21 +56,65 @@ em{
 
 h1{
 	clear: right;
-	margin-left: 55%;
 	font-family: ApercuMedium;	
-	font-size: 2em;
-	color: #FFF;
+	font-size: 3em;
 	line-height: 1.5em;
 	position: relative;
   	top: 40%;
-    -webkit-transform: translateY(-50%);
+    /*background-color: rgba(100,165,250,.2);*/
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0,0,0,.75);
+}
+
+h1#header{
+	margin-left: 60%;
+	-webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     max-width: 35%;
+    color: #FFF;
+}
+
+h1#about{
+	margin-top: 20vh;
+	margin-bottom: 10vh;
+	padding: 0;
+	text-align: center;
+}
+
+h1#imgAbove{
+	margin-top: 10vh;
+	margin-bottom: 1em;
+	margin-left: 3vw;
+	padding: 0;
+	text-align: center;
+}
+
+img.screen{
+	height:62vh;
+	display: block;
+	margin: auto;
+}
+
+img#about{
+	margin-top:20vh;
+	height:25vh;
+}
+
+img#device{
+	margin-top:20vh;
+	height:25vh;
+	height: 50vh;
 }
 
 img#trypodWhiteLogo{
+	padding-top: 4px;
 	height:35px;
+}
+
+img#whoFor{
+	height: 25vh;
+	margin-bottom: 10vh;
 }
 
 img#nexus{
@@ -71,11 +128,10 @@ img#nexus{
 	position:relative;
 }
 
-img.screen{
-	height:62vh;
-	display: block;
-	margin: auto;
+li{
+	line-height: 1.75em;
 }
+
 
 li.category{
 	padding: 1.5em;
@@ -83,14 +139,14 @@ li.category{
 	border-top: 4px solid rgba(255,255,255,0);
 	color:#FFF;
 	font-family: ApercuLight;
+	float:right;
 }
+
 li.logo {
 	padding: 1em;
 	float:left;
 }
-li.category {
-	float:right;
-}
+
 li.footerContent {
 	float:left;
 	padding-left: 2em;
@@ -100,12 +156,52 @@ li.footerContent {
 	display: table;
 	color:#FFF;
 	font-family: ApercuLight;
+	line-height: 1.75em;
 }
-li.category:hover{
+li.floatCategory:hover{
 	border-top: 4px solid rgba(255,255,255,.5);
 }
-li.category:active{
+li.floatCategory:active{
 	border-top: 4px solid rgba(255,255,255,.8);
+}
+
+
+li.floatCategory{
+	float:right;
+	padding: 1.5em;
+	border-top: 4px solid rgba(255,255,255,0);
+	color:#FFF;
+	font-family: ApercuLight;
+}
+
+li ul {
+	margin-top: 1.5em;
+	margin-left: -1.5em;
+	position: absolute;
+	float: none;
+	width: inherit;
+	padding-bottom: 1em;
+}
+
+li ul li {
+	display: none;
+	border-left: 4px solid rgba(255,255,255,0);
+	padding-left:1.5em;
+	padding-right:1.5em;
+}
+
+li ul li:hover {
+	display: none;
+	border-left: 4px solid rgba(255,255,255,.5);
+}
+
+li:hover  ul li{
+	display: block;
+}
+
+p{
+	font-family: ApercuLight;
+	line-height: 1.75em;
 }
 
 p.screenDescription{
@@ -114,17 +210,29 @@ p.screenDescription{
 	margin-left: 67.5vw;
 	display: block;	
 	margin-top: -57.5vh;
-	font-family: ApercuLight;
 	max-width: 20vw;		
 }
 
-ul{
-	padding-right: 5vw;
-	padding-left: 5vw;
+p.description{
+	max-width: 60%;
+	text-align: left;
+	margin-left: 23vw;
+	margin-right: 20vw;
 }
 
+ul#nav{
+	padding-right: 5vw;
+	padding-left: 5vw;
+	width: 90vw;
+	position:absolute;
+	clear:both;
+	z-index: 3;
+}
 
+input[type="button"] {
+    font-family: ApercuLight;
+	line-height: 1.75em;
+	font-size: 1em;
 
-
-
+}
 
