@@ -8,6 +8,11 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 html,body{
 	overflow-x:hidden;
 }
+a {
+	color:#FFF;
+	text-decoration: none;
+	font-family: ApercuLight;
+}
 
 a.button{
 	color:#2196F3;
@@ -63,15 +68,11 @@ h1{
 	position: relative;
   	top: 40%;
     /*background-color: rgba(100,165,250,.2);*/
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgba(0,0,0,.75);
 }
 
 h1#header{
 	margin-left: 60%;
-	-webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+
     max-width: 35%;
     color: #FFF;
 }
@@ -97,7 +98,7 @@ img.screen{
 	margin: auto;
 }
 
-img#about{
+img#aboutImg{
 	margin-top:20vh;
 	height:25vh;
 }
