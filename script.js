@@ -1,5 +1,9 @@
 $(document).ready(function(){
    						// Height of window (visible part).
+
+   	$(window).load(function(){
+   		$("center#loading").hide();
+   	})
 	scrollHeight = $(window).scrollTop();
 	headerHeight = $('div.header').height();
 
@@ -49,7 +53,8 @@ $(document).ready(function(){
 	$('.single-item').slick({
 		autoplay: true,
 		lazyLoad: 'ondemand',
-		autoplaySpeed: 2000
+		autoplaySpeed: 2000,
+		pauseOnHover: true
 	});
 
 	// Click event for any anchor tag that's href starts with #

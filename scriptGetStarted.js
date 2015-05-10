@@ -37,6 +37,10 @@ $(document).ready(function(){
 		autoplaySpeed: 2000
 	});
 
+	$('#internetShopping').click(function() {
+		$("#internetList").toggle("slow");
+	});
+
 	// Click event for any anchor tag that's href starts with #
  	$('a[href^="#"]').click(function(event) {
 
