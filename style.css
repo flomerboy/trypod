@@ -37,10 +37,26 @@ a.button:hover{
 	transition-duration: .5s;
 }
 
-div.header{
-	height: 95vh;
-	background-image: url("img/gloryshot3.png");
-	background-blend-mode:overlay;
+a#seeMore{
+	position:relative;
+	top: -20vh;
+	color:#FFF;
+	font-family: ApercuLight;
+	text-decoration: none;
+	-moz-border-radius: .5em;
+ 	-webkit-border-radius: .5em;
+  	border: 2px solid #FFF;
+  	padding: 1em;
+}
+
+a#seeMore:hover{
+	background-color:rgba(255,255,255,.5)
+}
+
+video.header{
+	width: 100%;
+	width:auto;
+	height:auto;
 	background-size: cover;
 }
 
@@ -86,7 +102,8 @@ h1{
 
 h1#header{
 	margin-left: 60%;
-
+	position: absolute;
+	float:left;
     max-width: 35%;
     color: #FFF;
 }
@@ -145,7 +162,7 @@ img#nexus{
 
 img#getStartedOverview{
 	height:25vh;
-	padding-top: 20vh;
+	padding-top: 25vh;
 }
 
 img#printedParts{
@@ -258,6 +275,19 @@ ul#nav{
 ul#internetList{
 	display: none;
 	margin-left: 23vw;
+	margin-top: 10vh;
+}
+
+ul#hardwareStoreList{
+	display: none;
+	margin-left: 23vw;
+	margin-top: 10vh;
+}
+
+ul#assemblyInstructionsList{
+	display: none;
+	margin-left: 23vw;
+	margin-right: 23vw;
 	margin-top: 10vh;
 }
 

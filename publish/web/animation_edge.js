@@ -1,0 +1,9 @@
+
+(function(compId){var _=null,y=true,n=false,e8='${trypodTrigger}',rz='rotateZ',x3='5.0.1.386',x4='rgba(0,0,0,0)',x1='5.0.1',tp='top',g='image',e9='${trypodBody}',x7='rgba(255,255,255,1)',x2='5.0.0',i='none';var g6='trypodBody.svg',g5='trypodTrigger.svg';var im='images/',aud='media/',vid='media/',js='js/',fonts={},opts={'gAudioPreloadPreference':'auto','gVideoPreloadPreference':'auto'},resources=[],scripts=[],symbols={"stage":{v:x1,mv:x2,b:x3,stf:i,cg:i,rI:n,cn:{dom:[{id:'trypodTrigger',t:g,r:['42.9%','39.6%','15.1%','20%','auto','auto'],o:'1',f:[x4,im+g5,'0px','0px'],tf:[[],['11'],[],['2.38','2.38'],['54.2095%','52.4865%']]},{id:'trypodBody',t:g,r:['42.9%','39.5%','83px','80px','auto','auto'],f:[x4,im+g6,'0px','0px'],tf:[[],['11'],[],['2.38','2.38'],['53.9858%','53.1612%']]}],style:{'${Stage}':{isStage:true,r:['null','null','550px','400px','auto','auto'],overflow:'hidden',f:[x7]}}},tt:{d:3000,a:y,data:[["eid55",rz,0,750,"linear",e8,'11deg','0deg'],["eid57",rz,750,2250,"swing",e8,'0deg','371deg'],["eid54",rz,0,750,"linear",e9,'11deg','0deg'],["eid56",rz,750,2250,"swing",e9,'0deg','371deg'],["eid53",tp,0,750,"linear",e8,'39.68%','44.3%'],["eid64",tp,750,366,"linear",e8,'44.3%','40%'],["eid66",tp,1116,191,"linear",e8,'40%','40.1%'],["eid65",tp,1307,693,"linear",e8,'40.1%','39.6%']]}}};AdobeEdge.registerCompositionDefn(compId,symbols,fonts,scripts,resources,opts);})("EDGE-418283999");
+(function($,Edge,compId){var Composition=Edge.Composition,Symbol=Edge.Symbol;Edge.registerEventBinding(compId,function($){
+//Edge symbol: 'stage'
+(function(symbolName){Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",3000,function(sym,e){this.play(0);});
+//Edge binding end
+})("stage");
+//Edge symbol end:'stage'
+})})(AdobeEdge.$,AdobeEdge,"EDGE-418283999");

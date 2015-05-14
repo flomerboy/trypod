@@ -4,8 +4,10 @@ $(document).ready(function(){
    	$(window).load(function(){
    		$("center#loading").hide();
    	})
+
 	scrollHeight = $(window).scrollTop();
-	headerHeight = $('div.header').height();
+	headerHeight = $(window).height();
+	console.log("headerHeight = " + headerHeight);
 
 	function map_range(value, low1, high1, low2, high2) {
     	return Math.floor(low2 + (high2 - low2) * (value - low1) / (high1 - low1));
@@ -26,9 +28,9 @@ $(document).ready(function(){
 	};
 
 	draw = function(){
-		$("div.header").css("background-color","rgba(" + R + ", " + G + ", " + B + ", " + A + ")");
-		actualColor = $("div.header").css("background-color");
-		console.log(actualColor);
+		// $("div.header").css("background-color","rgba(" + R + ", " + G + ", " + B + ", " + A + ")");
+		// actualColor = $("div.header").css("background-color");
+		// console.log(actualColor);
 		if (scrollHeight>headerHeight) {
 			$("ul#nav").css("position","fixed");
 			$("ul#nav").css("background-color","rgba(33,150,243,.9)");

@@ -30,6 +30,10 @@ $(document).ready(function(){
 		draw();
 	});
 
+	$(window).load(function(){
+   		$("center#loading").hide();
+   	})
+
 	//slick properties for the nexus "how the app works" thing
 	$('.single-item').slick({
 		autoplay: true,
@@ -40,6 +44,15 @@ $(document).ready(function(){
 	$('#internetShopping').click(function() {
 		$("#internetList").toggle("slow");
 	});
+
+	$('#hardwareStoreShopping').click(function() {
+		$("#hardwareStoreList").toggle("slow");
+	});
+
+	$('#assemblyInstructions').click(function() {
+		$("#assemblyInstructionsList").toggle("slow");
+	});
+
 
 	// Click event for any anchor tag that's href starts with #
  	$('a[href^="#"]').click(function(event) {
