@@ -291,6 +291,16 @@ ul#assemblyInstructionsList{
 	margin-top: 10vh;
 }
 
+ul#educationList{
+	margin-left: 23vw;
+	margin-right: 23vw;
+}
+
+#educationSvg{
+	margin-top: 10vh;
+	height:30vh;
+}
+
 input[type="button"] {
     font-family: ApercuLight;
 	line-height: 1.75em;
